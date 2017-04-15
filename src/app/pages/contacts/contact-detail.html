@@ -1,0 +1,48 @@
+<!-- new syntax for ng-if -->
+<section *ngIf="contact">
+  <form>
+  <div class="form-group">
+    <label for="input01">Contact Name</label>
+    <input type="text" class="form-control" id="input01" placeholder="Contact Name" value="{{contact.contact_name}}">
+  </div>
+  <div class="form-group">
+    <label for="input02">Company Name</label>
+    <input type="text" class="form-control" id="input02" placeholder="Company Name" value="{{contact.company_name}}">
+  </div>
+  <div class="form-group">
+    <label for="input03">Status</label>
+    <input type="text" class="form-control" id="input03" placeholder="Status" value="{{contact.status}}">
+  </div>
+  <div class="form-group">
+    <label for="input04">Has Order</label>
+    <input type="text" class="form-control" id="input04" placeholder="Form" value="{{contact.has_transaction}}">
+  </div
+  ><div class="form-group">
+    <label for="input05">Owner Name</label>
+    <input type="text" class="form-control" id="input05" placeholder="Owner Name" value="{{contact.owner_name}}">
+  </div>
+  <div class="form-group">
+    <label for="input06">TIN</label>
+    <input type="text" class="form-control" id="input06" placeholder="TIN" value="{{contact.cf_tin}}">
+  </div>
+  <div class="form-group">
+    <label for="input07">DLN</label>
+    <input type="text" class="form-control" id="input07" placeholder="DLN" value="{{contact.cf_dln}}">
+  </div>
+  <div class="form-group">
+    <label for="input08">Device Id</label>
+    <input type="text" class="form-control" id="input08" placeholder="Composition" value="{{contact.cf_did}}">
+  </div>
+  <div class="form-group">
+    <label for="input09">Group Device Id</label>
+    <input type="text" class="form-control" id="input09" placeholder="DID" value="{{contact.cf_gdid}}">
+  </div>
+  <div class="form-group">
+    <label for="input10">Address</label>
+    <input type="text" class="form-control" id="input10" placeholder="Scheme Description" value="{{contact.billing_address.address}}">
+    <input type="text" class="form-control" id="input11" placeholder="Scheme Description" value="{{contact.billing_address.city}}">
+    <input type="text" class="form-control" id="input12" placeholder="Scheme Description" value="{{contact.billing_address.state}}">
+    <input type="text" class="form-control" id="input13" placeholder="Scheme Description" value="{{contact.billing_address.zip}}">
+  </div>
+</form>
+<section>

@@ -1,0 +1,29 @@
+<div class="horizontal-scroll">
+  <table class="table table-hover">
+    <thead>
+    <tr class="black-muted-bg">
+      <th>Contact Name</th>
+      <th class="align-right">Company Name</th>
+      <th class="table-arr"></th>
+      <th class="align-right">Email</th>
+      <th class="table-arr"></th>
+      <th class="align-right">Mobile</th>
+      <th class="table-arr"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let contact of contacts" class="no-top-border"  (click)="selectContact(contact)">
+      <!--(click)="selectItem(item)">-->
+      <!--<a href="#" [routerLink]="['/items', item.item_id]">-->
+      <td ngClass="nowrap">{{contact.contact_name}}</td>
+      <td class="align-right">{{contact.company_name}}</td>
+      <td class="table-arr"></td>
+      <td class="align-right">{{contact.email}}</td>
+      <td class="table-arr"></td>
+      <td class="align-right">{{contact.mobile}}</td>
+      <td class="table-arr"></td>
+      <!--</a>-->
+    </tr>
+    </tbody>
+  </table>
+</div>

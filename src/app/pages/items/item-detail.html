@@ -1,0 +1,60 @@
+<!-- new syntax for ng-if -->
+<section *ngIf="item">
+  <form>
+  <div class="form-group">
+    <label for="input01">Name</label>
+    <input type="text" class="form-control" id="input01" placeholder="Name" value="{{item.name}}">
+  </div>
+  <div class="form-group">
+    <label for="input02">Unit</label>
+    <input type="text" class="form-control" id="input02" placeholder="Unit" value="{{item.unit}}">
+  </div>
+  <div class="form-group">
+    <label for="input03">SKU</label>
+    <input type="text" class="form-control" id="input03" placeholder="SKU" value="{{item.sku}}">
+  </div>
+  <div class="form-group">
+    <label for="input04">Form</label>
+    <input type="text" class="form-control" id="input04" placeholder="Form" value="{{item.custom_fields.cf_form}}">
+  </div
+  ><div class="form-group">
+    <label for="input05">Pack</label>
+    <input type="text" class="form-control" id="input05" placeholder="Pack" value="{{item.custom_fields.cf_pack}}">
+  </div>
+  <div class="form-group">
+    <label for="input06">Pack Description</label>
+    <input type="text" class="form-control" id="input06" placeholder="Pack Description" value="{{item.custom_fields.cf_pack_description}}">
+  </div>
+  <div class="form-group">
+    <label for="input07">Category</label>
+    <input type="text" class="form-control" id="input07" placeholder="Category" value="{{item.custom_fields.cf_category}}">
+  </div>
+  <div class="form-group">
+    <label for="input08">Composition</label>
+    <input type="text" class="form-control" id="input08" placeholder="Composition" value="{{item.custom_fields.cf_composition}}">
+  </div>
+  <div class="form-group">
+    <label for="input09">Scheme</label>
+    <input type="text" class="form-control" id="input09" placeholder="Scheme" value="{{item.custom_fields.cf_scheme}}">
+  </div>
+  <div class="form-group">
+    <label for="input10">Scheme Description</label>
+    <input type="text" class="form-control" id="input10" placeholder="Scheme Description" value="{{item.custom_fields.cf_scheme_description}}">
+  </div>
+  <div class="form-group">
+    <label for="input11">Scheme Quantity</label>
+    <input type="text" class="form-control" id="input11" placeholder="Scheme Quantity" value="{{item.custom_fields.cf_scheme_quantity}}">
+  </div>
+  <div class="form-group">
+    <label for="input12">Scheme Value</label>
+    <input type="text" class="form-control" id="input12" placeholder="Scheme Value" value="{{item.custom_fields.cf_scheme_value}}">
+  </div>
+  <div class="form-group">
+    <label for="input13">Scheme Expiry</label>
+    <input type="text" class="form-control" id="input13" placeholder="Scheme Expiry" value="{{item.custom_fields.cf_scheme_expiry}}">
+  </div><div class="form-group">
+    <label for="input14">MRP</label>
+    <input type="text" class="form-control" id="input14" placeholder="MRP" value="{{item.custom_fields.cf_mrp}}">
+  </div>
+</form>
+<section>
