@@ -2,12 +2,12 @@
   <table class="table table-hover">
     <thead>
     <tr class="black-muted-bg">
-      <th>Date</th>
-      <th class="align-right">Order #</th>
+      <th class="align-left">Date</th>
+      <th class="align-left">Order #</th>
       <th class="table-arr"></th>
-      <th class="align-right">Customer Name</th>
+      <th class="align-left">Customer Name</th>
       <th class="table-arr"></th>
-      <th class="align-right">Status</th>
+      <th class="align-left">Status</th>
       <th class="table-arr"></th>
       <th class="align-right">Total</th>
       <th class="table-arr"></th>
@@ -17,12 +17,12 @@
     <tr *ngFor="let order of orders" class="no-top-border"  (click)="selectOrder(order)">
       <!--(click)="selectItem(item)">-->
       <!--<a href="#" [routerLink]="['/items', item.item_id]">-->
-      <td ngClass="nowrap">{{order.date}}</td>
-      <td class="align-right">{{order.salesorder_number}}</td>
+      <td class="align-left">{{order.date}}</td>
+      <td class="align-left">{{order.salesorder_number}}</td>
       <td class="table-arr"></td>
-      <td class="align-right">{{order.customer_name}}</td>
+      <td class="align-left">{{order.customer_name}}</td>
       <td class="table-arr"></td>
-      <td class="align-right">{{order.status}}</td>
+      <td class="align-left">{{order.status}}</td>
       <td class="table-arr"></td>
       <td class="align-right">{{order.cf_total_mrp}}</td>
       <td class="table-arr"></td>
