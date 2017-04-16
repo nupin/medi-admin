@@ -2,9 +2,9 @@
   <table class="table table-hover">
     <thead>
     <tr class="black-muted-bg">
-      <th ngclass="nowrap">Item Name</th>
       <th class="align-right">SKU</th>
-      <th class="table-arr"></th>
+      <th class="table-arr"></th>    
+      <th >Item Name</th>
       <th class="align-right">Form</th>
       <th class="table-arr"></th>
       <th class="align-right">MRP</th>
@@ -15,9 +15,9 @@
     <tr *ngFor="let item of items" class="no-top-border"  (click)="selectItem(item)">
       <!--(click)="selectItem(item)">-->
       <!--<a href="#" [routerLink]="['/items', item.item_id]">-->
-      <td ngClass="nowrap">{{item.name}}</td>
       <td class="align-right">{{item.sku}}</td>
       <td class="table-arr"></td>
+      <td >{{item.name}}</td>
       <td class="align-right">{{item.cf_form}}</td>
       <td class="table-arr"></td>
       <td class="align-right">{{item.cf_mrp}}</td>

@@ -28,7 +28,8 @@ export const routes: Routes = [
       { path: 'tables', loadChildren: 'app/pages/tables/tables.module#TablesModule' },
       { path: 'maps', loadChildren: 'app/pages/maps/maps.module#MapsModule' },
       { path: 'items', loadChildren: 'app/pages/items/items.module#ItemsModule' },
-      { path: 'contacts', loadChildren: 'app/pages/contacts/contact.module#ContactModule' }
+      { path: 'contacts', loadChildren: 'app/pages/contacts/contact.module#ContactModule' },
+      { path: 'orders', loadChildren: 'app/pages/orders/order.module#OrderModule' }
     ]
   }
 ];

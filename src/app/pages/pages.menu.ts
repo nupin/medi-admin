@@ -329,7 +329,7 @@ export const PAGES_MENU = [
         path: 'items',
         data: {
           menu: {
-            title: 'items',
+            title: 'Items',
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
@@ -341,7 +341,19 @@ export const PAGES_MENU = [
         path: 'contacts',
         data: {
           menu: {
-            title: 'contacts',
+            title: 'Contacts',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
+        path: 'orders',
+        data: {
+          menu: {
+            title: 'Orders',
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
